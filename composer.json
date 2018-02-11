@@ -21,7 +21,7 @@
         "doctrine/doctrine-bundle": "^1.6",
         "pagerfanta/pagerfanta": "1.0.*@dev",
         "lexik/form-filter-bundle": "~5.0", 
-        "petkopara/multi-search-bundle": "~1.0"
+        "petkopara/multi-search-bundle": "^1.0@dev"
       
     },
     "require-dev": {
