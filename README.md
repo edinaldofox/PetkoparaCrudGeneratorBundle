@@ -23,6 +23,7 @@ Designed to bring back the functionality of the old Symfony 1.4 admin generator,
 * Possibility to set the save path for all the generated files (by default in app/Resources).
 * Possiblity to not generate show code.
 * Most of the features are optional and you can generate the CRUD very flexible depending on your needs.
+* Suport PostgreSQL 9.5.11
 
 ## Screenshots
 
@@ -118,6 +119,8 @@ And
 ## Author
 
 Petko Petkov - petkopara at gmail dot com
+
+José Edinaldo - edinaldofox@gmail.com
 
 ## License
 

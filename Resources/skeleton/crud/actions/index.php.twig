@@ -154,7 +154,11 @@
      * Calculates the total of records string
      */
     protected function getTotalOfRecordsString($queryBuilder, $request) {
-        $totalOfRecords = $queryBuilder->select('COUNT(e.{{identifier}})')->getQuery()->getSingleScalarResult();
+        $totalOfRecords = $queryBuilder->select('COUNT(e.{{identifier}})')
+            ->groupBy('e.id')
+            ->getQuery()
+            ->getSingleScalarResult()
+        ;
         $show = $request->get('pcg_show', 10);
         $page = $request->get('pcg_page', 1);
 

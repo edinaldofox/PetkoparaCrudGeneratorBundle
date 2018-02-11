@@ -50,7 +50,7 @@
 {% endif %}
 
 {% if without_sorting == false %}
-                {{'{% import "PetkoparaCrudGeneratorBundle::macros/th_sortable.html.twig" as macros %}'}}
+                {{'{% import "@PetkoparaCrudGenerator/macros/th_sortable.html.twig" as macros %}'}}
     {% for field, metadata in fields %}
                         <th>{{"{{macros.th_sortable('" ~field~"',app.request.get('pcg_sort_col'), app.request.get('pcg_sort_order') , '" ~ route_name_prefix ~ "', '" ~ field|capitalize ~ "')}}" }}</th>
     {% endfor %}
